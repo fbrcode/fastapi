@@ -6,12 +6,12 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return {"Hello": "World"}
+    return {"path": "root", "message": "Hello World New"}
 
 
 @app.get("/items/{item_id}")
 def read_item(item_id: int):
-    return {"item_id": item_id}
+    return {"path": "items", "item_id": item_id}
 
 
 def start():
