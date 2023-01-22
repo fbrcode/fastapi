@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "api"
 version = "0.5.0"
-description = ""
+description = "simple fast api code for testing"
 authors = ["fbrcode <fabio.bressler@gmail.com>"]
 readme = "README.md"
 
