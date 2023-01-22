@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "api"
-version = "0.4.0"
-description = ""
+version = "0.5.0"
+description = "simple fast api code for testing"
 authors = ["fbrcode <fabio.bressler@gmail.com>"]
 readme = "README.md"
 
@@ -24,7 +24,7 @@ api = 'api.app:start'
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.4.0"
+version = "0.5.0"
 version_files = [
     "api/__init__.py",
     "pyproject.toml:version"
