@@ -32,7 +32,7 @@ poetry run api
 
 ## Automated release
 
-Bump version and generate changelog action
+Bump version and generate changelog action:
 
 ```yml
 name: Bump version
@@ -64,4 +64,31 @@ jobs:
           tag_name: ${{ env.REVISION }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+Update action settings to enable writing...
+
+Go to:
+
+- <https://github.com/[user]/[repo]/settings>
+  - Actions
+    - General
+    - Workflow permissions
+      - Check option: Read and write permissions
+
+## Workflow
+
+```sh
+git push origin feature1
+# make pull request, merge and delete branch
+git checkout staging
+git pull
+# for release generation
+git push origin staging:main
+# observe the bump-version action
+git checkout main
+# apply release changes back to staging
+git push origin main:staging
+git checkout staging
+git pull
 ```
