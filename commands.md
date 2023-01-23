@@ -92,3 +92,9 @@ git push origin main:staging
 git checkout staging
 git pull
 ```
+
+## Manual Version Bump
+
+```sh
+cz bump
+```
