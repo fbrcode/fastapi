@@ -16,6 +16,12 @@ Install the project dependencies:
 poetry install
 ```
 
+Enforce the pre-commit hooks for conventional commits:
+
+```sh
+poetry run pre-commit install --hook-type commit-msg --hook-type pre-push
+```
+
 ## API Startup
 
 Start the application with uvicorn:
