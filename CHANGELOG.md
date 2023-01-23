@@ -1,3 +1,9 @@
+## v1.1.0 (2023-01-23)
+
+### Feat
+
+- mandatory conventional commits
+
 ## v1.0.0 (2023-01-22)
 
 ### Feat
