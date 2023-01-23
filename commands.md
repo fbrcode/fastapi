@@ -84,6 +84,10 @@ git push origin feature1
 git checkout staging
 git pull
 # for release generation
+cz bump
+# i.e. v2.2.0
+git tag v2.2.0
+git push origin v2.2.0
 git push origin staging:main
 # observe the bump-version action
 git checkout main
