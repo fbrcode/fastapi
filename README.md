@@ -61,3 +61,24 @@ Run the tests:
 ```sh
 poetry run pytest ./tests
 ```
+
+## Release Versioning
+
+This is a process sequence to release a new version of the project.
+
+```sh
+# from staging branch
+git checkout -b feat/X
+# do all changes and commits
+poetry run cz --no-raise 21 bump --yes --changelog --check-consistency
+git push origin feat/X
+## PR, approve and merge
+git checkout staging
+git pull
+# when ready to release
+git push origin staging:main
+git checkout main
+git pull
+echo $(head -1 CHANGELOG.md | awk '{print $2}')
+git push origin $(head -1 CHANGELOG.md | awk '{print $2}')
+```
