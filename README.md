@@ -35,3 +35,11 @@ Or using scripts definition:
 ```sh
 poetry run api
 ```
+
+## Testing
+
+Run the tests:
+
+```sh
+poetry run pytest ./tests
+```
