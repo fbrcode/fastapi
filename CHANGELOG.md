@@ -1,3 +1,9 @@
+## v3.2.0 (2023-01-25)
+
+### Feat
+
+- use docker to spin up application
+
 ## v3.1.0 (2023-01-25)
 
 ### Feat

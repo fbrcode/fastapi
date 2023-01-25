@@ -62,6 +62,32 @@ Run the tests:
 poetry run pytest ./tests
 ```
 
+## Docker
+
+Build the docker image:
+
+```sh
+docker build -t api-app .
+```
+
+Run the docker image as a container:
+
+```sh
+docker run --name f-api -p 8888:8000 -d api-app
+```
+
+Use docker compose to run the application:
+
+```sh
+docker-compose up -d
+```
+
+Shutdown with docker compose:
+
+```sh
+docker-compose down
+```
+
 ## Release Versioning
 
 This is a process sequence to release a new version of the project.
