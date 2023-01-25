@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "api"
-version = "2.3.0"
+version = "3.1.0"
 description = "simple fast api code for testing"
 authors = ["fbrcode <fabio.bressler@gmail.com>"]
 readme = "README.md"
@@ -18,13 +18,15 @@ jinja2 = "^3.1.2"
 black = "^22.12.0"
 commitizen = "^2.39.1"
 pre-commit = "^2.21.0"
+pytest = "^7.2.1"
+httpx = "^0.23.3"
 
 [tool.poetry.scripts]
 api = 'api.app:start'
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "2.3.0"
+version = "3.1.0"
 version_files = [
     "api/__init__.py",
     "pyproject.toml:version"

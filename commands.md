@@ -16,6 +16,8 @@ poetry add black --group dev
 poetry add commitizen --group dev
 poetry add pre-commit --group dev
 pre-commit install --hook-type commit-msg --hook-type pre-push
+poetry add pytest --group dev
+poetry add httpx --group dev
 ```
 
 Command to startup the project.
