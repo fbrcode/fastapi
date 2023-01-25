@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    container_name: f-api
+    ports:
+      - 8888:8000

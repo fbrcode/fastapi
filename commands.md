@@ -20,6 +20,8 @@ poetry add pytest --group dev
 poetry add httpx --group dev
 ```
 
+## App startup
+
 Command to startup the project.
 
 ```sh
@@ -30,4 +32,28 @@ Or using scripts definition:
 
 ```sh
 poetry run api
+```
+
+## Testing
+
+Command to run the tests.
+
+```sh
+poetry run pytest ./tests
+```
+
+## Docker
+
+Command to build the docker image.
+
+```sh
+docker build -t api-app .
+```
+
+Command to run the docker image.
+
+```sh
+docker run --name f-api -p 8888:8000 -d api-app
+# or with mapping volume
+docker run --name f-api -p 8888:8000 -d -v $(pwd):/app api-app
 ```
